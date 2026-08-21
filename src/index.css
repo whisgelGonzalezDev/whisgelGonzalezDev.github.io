@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  --color-bg: #ffffff;
+  --color-bg-soft: #f6f5f8;
+  --color-surface: #ffffff;
+  --color-border: #e5e4e7;
+  --color-text: #43414a;
+  --color-text-h: #0b0a0f;
+  --color-muted: #6b6875;
+  --color-accent: #7c3aed;
+  --color-accent-soft: #ede9fe;
+  --color-accent-2: #06b6d4;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --color-bg: #0b0a0f;
+  --color-bg-soft: #131218;
+  --color-surface: #17161d;
+  --color-border: #26242e;
+  --color-text: #b8b5c0;
+  --color-text-h: #f5f4f7;
+  --color-muted: #8b8896;
+  --color-accent: #a78bfa;
+  --color-accent-soft: rgba(167, 139, 250, 0.12);
+  --color-accent-2: #22d3ee;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

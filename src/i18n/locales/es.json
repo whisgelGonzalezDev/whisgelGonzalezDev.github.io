@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "trajectory": "Trayectoria",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "collaborations": "Colaboraciones",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "kicker": "Desarrollador Full-Stack",
+    "title": "Construyo productos digitales de punta a punta",
+    "subtitle": "Frontend, backend y arquitectura en tiempo real. De la idea al despliegue.",
+    "cta_projects": "Ver proyectos",
+    "cta_contact": "Hablemos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "body": "Desarrollador full-stack enfocado en construir productos reales de principio a fin: desde el diseño de base de datos y la arquitectura del backend hasta la experiencia de usuario en el frontend. Trabajo con React, TypeScript, NestJS y PostgreSQL, y disfruto especialmente los sistemas con lógica de negocio compleja — pagos, tiempo real, roles y permisos."
+  },
+  "trajectory": {
+    "title": "Trayectoria",
+    "subtitle": "Evolución técnica a través de los proyectos que he construido"
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "projects": {
+    "title": "Proyectos destacados",
+    "subtitle": "Productos que diseñé y construí de punta a punta",
+    "status_live": "En producción",
+    "status_progress": "En desarrollo",
+    "status_done": "Completo",
+    "view_demo": "Ver demo",
+    "view_code": "Ver código",
+    "no_public_link": "Repositorio privado"
+  },
+  "collaborations": {
+    "title": "Colaboraciones",
+    "subtitle": "Proyectos en los que participé como colaborador, dentro de equipos y empresas"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "¿Tienes un proyecto en mente? Escríbeme.",
+    "cta": "Enviar correo"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "built_with": "Construido con React, TypeScript y Tailwind CSS."
+  }
+}

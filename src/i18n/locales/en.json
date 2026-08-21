@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "about": "About",
+    "trajectory": "Trajectory",
+    "skills": "Skills",
+    "projects": "Projects",
+    "collaborations": "Collaborations",
+    "contact": "Contact"
+  },
+  "hero": {
+    "kicker": "Full-Stack Developer",
+    "title": "I build digital products end to end",
+    "subtitle": "Frontend, backend, and real-time architecture. From idea to deployment.",
+    "cta_projects": "View projects",
+    "cta_contact": "Let's talk"
+  },
+  "about": {
+    "title": "About me",
+    "body": "Full-stack developer focused on building real products from start to finish: from database design and backend architecture to frontend user experience. I work with React, TypeScript, NestJS, and PostgreSQL, and I especially enjoy systems with complex business logic — payments, real-time, roles and permissions."
+  },
+  "trajectory": {
+    "title": "Trajectory",
+    "subtitle": "Technical evolution through the projects I've built"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Products I designed and built end to end",
+    "status_live": "Live",
+    "status_progress": "In progress",
+    "status_done": "Complete",
+    "view_demo": "View demo",
+    "view_code": "View code",
+    "no_public_link": "Private repository"
+  },
+  "collaborations": {
+    "title": "Collaborations",
+    "subtitle": "Projects I contributed to as part of teams and companies"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Have a project in mind? Reach out.",
+    "cta": "Send email"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built_with": "Built with React, TypeScript, and Tailwind CSS."
+  }
+}
