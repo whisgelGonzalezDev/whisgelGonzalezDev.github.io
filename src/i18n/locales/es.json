@@ -4,23 +4,22 @@
     "trajectory": "Trayectoria",
     "skills": "Habilidades",
     "projects": "Proyectos",
-    "collaborations": "Colaboraciones",
     "contact": "Contacto"
   },
   "hero": {
     "kicker": "Desarrollador Full-Stack",
     "title": "Construyo productos digitales de punta a punta",
-    "subtitle": "Frontend, backend y arquitectura en tiempo real. De la idea al despliegue.",
+    "subtitle": "9+ años liderando equipos y construyendo plataformas SaaS en producción.",
     "cta_projects": "Ver proyectos",
     "cta_contact": "Hablemos"
   },
   "about": {
     "title": "Sobre mí",
-    "body": "Desarrollador full-stack enfocado en construir productos reales de principio a fin: desde el diseño de base de datos y la arquitectura del backend hasta la experiencia de usuario en el frontend. Trabajo con React, TypeScript, NestJS y PostgreSQL, y disfruto especialmente los sistemas con lógica de negocio compleja — pagos, tiempo real, roles y permisos."
+    "body": "Full Stack Web Developer con más de 9 años construyendo aplicaciones web responsivas, performantes y accesibles (WCAG). He liderado equipos de desarrollo y traducido diseño en interfaces que rankean (SEO) y convierten. Trabajo con React, Next.js, Vue 3 y Angular en frontend; NestJS y Laravel en backend — y disfruto especialmente los sistemas con lógica de negocio compleja: pagos, tiempo real, roles y permisos."
   },
   "trajectory": {
     "title": "Trayectoria",
-    "subtitle": "Evolución técnica a través de los proyectos que he construido"
+    "subtitle": "9+ años construyendo y liderando equipos de desarrollo web"
   },
   "skills": {
     "title": "Habilidades"

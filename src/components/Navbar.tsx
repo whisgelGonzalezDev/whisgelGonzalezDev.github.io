@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Moon, Sun, Menu, X } from 'lucide-react'
 import { useTheme } from '../context/ThemeContext'
 
-const SECTIONS = ['about', 'trajectory', 'skills', 'projects', 'collaborations', 'contact'] as const
+const SECTIONS = ['about', 'trajectory', 'skills', 'projects', 'contact'] as const
 
 export function Navbar() {
   const { t, i18n } = useTranslation()

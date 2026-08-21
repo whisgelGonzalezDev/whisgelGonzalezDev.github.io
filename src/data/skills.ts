@@ -6,18 +6,22 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     category: { es: 'Frontend', en: 'Frontend' },
-    items: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Angular', 'Vue'],
+    items: ['React', 'Next.js', 'Vue 3', 'Angular', 'TypeScript', 'Tailwind CSS', 'WCAG Accessibility'],
   },
   {
     category: { es: 'Backend', en: 'Backend' },
-    items: ['NestJS', 'Node.js', 'PHP / Laravel', 'Zod', 'JWT / RBAC'],
+    items: ['NestJS', 'Laravel', 'Node.js', 'REST APIs', 'WebSockets', 'WebAuthn', 'JWT'],
   },
   {
     category: { es: 'Datos & Infra', en: 'Data & Infra' },
-    items: ['PostgreSQL', 'Drizzle ORM', 'Redis', 'Socket.IO'],
+    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'AWS RDS', 'Redis', 'Docker'],
+  },
+  {
+    category: { es: 'Performance & SEO', en: 'Performance & SEO' },
+    items: ['Lighthouse', 'Core Web Vitals', 'Schema Markup', 'Lazy Loading'],
   },
   {
     category: { es: 'Herramientas', en: 'Tooling' },
-    items: ['Git', 'Vercel', 'GitHub Actions', 'Figma'],
+    items: ['Git', 'CI/CD', 'Jira', 'Vercel', 'GitHub Actions', 'Figma'],
   },
 ]

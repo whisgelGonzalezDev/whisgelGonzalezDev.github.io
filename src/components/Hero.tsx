@@ -2,9 +2,11 @@ import { useTranslation } from 'react-i18next'
 import { ArrowDown, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { GithubIcon } from './icons/GithubIcon'
+import { LinkedinIcon } from './icons/LinkedinIcon'
 
 const SOCIAL_LINKS = [
   { icon: GithubIcon, href: 'https://github.com/whisgelGonzalezDev', label: 'GitHub' },
+  { icon: LinkedinIcon, href: 'https://linkedin.com/in/whisgel-gonzalez', label: 'LinkedIn' },
   { icon: Mail, href: 'mailto:whisgeljesus10@gmail.com', label: 'Email' },
 ]
 

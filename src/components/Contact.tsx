@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { Mail } from 'lucide-react'
 import { GithubIcon } from './icons/GithubIcon'
+import { LinkedinIcon } from './icons/LinkedinIcon'
 
 export function Contact() {
   const { t } = useTranslation()
@@ -26,7 +27,17 @@ export function Contact() {
         >
           <GithubIcon size={16} /> GitHub
         </a>
+        <a
+          href="https://linkedin.com/in/whisgel-gonzalez"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] px-6 py-2.5 text-sm font-medium text-[var(--color-text-h)] transition-colors hover:bg-[var(--color-bg-soft)]"
+        >
+          <LinkedinIcon size={16} /> LinkedIn
+        </a>
       </div>
+
+      <p className="mt-6 text-xs text-[var(--color-muted)]">Caracas, Venezuela (UTC-4) · Remoto</p>
     </section>
   )
 }

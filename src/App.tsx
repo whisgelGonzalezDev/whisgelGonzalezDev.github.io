@@ -5,7 +5,6 @@ import { About } from './components/About'
 import { Trajectory } from './components/Trajectory'
 import { Skills } from './components/Skills'
 import { Projects } from './components/Projects'
-import { Collaborations } from './components/Collaborations'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
@@ -20,7 +19,6 @@ function App() {
           <Trajectory />
           <Skills />
           <Projects />
-          <Collaborations />
           <Contact />
         </main>
         <Footer />
