@@ -9,7 +9,7 @@ const ITEMS = [
   { id: 'contact', icon: Mail },
 ]
 
-export function FloatingNav() {
+function useActiveSection() {
   const [active, setActive] = useState('top')
 
   useEffect(() => {
@@ -31,25 +31,53 @@ export function FloatingNav() {
     return () => observer.disconnect()
   }, [])
 
+  return active
+}
+
+export function FloatingNav() {
+  const active = useActiveSection()
+
   return (
-    <nav
-      className="fixed top-1/2 left-4 z-40 hidden -translate-y-1/2 flex-col gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)]/80 p-2 shadow-lg backdrop-blur-md md:flex"
-      aria-label="Section navigation"
-    >
-      {ITEMS.map(({ id, icon: Icon }) => (
-        <a
-          key={id}
-          href={`#${id}`}
-          aria-label={id}
-          className={`flex h-10 w-10 items-center justify-center rounded-full transition-colors ${
-            active === id
-              ? 'bg-[var(--color-accent)] text-white shadow-[0_0_16px_var(--color-accent)]'
-              : 'text-[var(--color-muted)] hover:bg-[var(--color-bg-soft)]'
-          }`}
-        >
-          <Icon size={17} />
-        </a>
-      ))}
-    </nav>
+    <>
+      <nav
+        className="fixed top-1/2 left-4 z-40 hidden -translate-y-1/2 flex-col gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)]/80 p-2 shadow-lg backdrop-blur-md md:flex"
+        aria-label="Section navigation"
+      >
+        {ITEMS.map(({ id, icon: Icon }) => (
+          <a
+            key={id}
+            href={`#${id}`}
+            aria-label={id}
+            className={`flex h-10 w-10 items-center justify-center rounded-full transition-colors ${
+              active === id
+                ? 'bg-[var(--color-accent)] text-white shadow-[0_0_16px_var(--color-accent)]'
+                : 'text-[var(--color-muted)] hover:bg-[var(--color-bg-soft)]'
+            }`}
+          >
+            <Icon size={17} />
+          </a>
+        ))}
+      </nav>
+
+      <nav
+        className="fixed right-4 bottom-4 left-4 z-40 flex items-center justify-between gap-1 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)]/90 p-2 shadow-lg backdrop-blur-md md:hidden"
+        aria-label="Section navigation"
+      >
+        {ITEMS.map(({ id, icon: Icon }) => (
+          <a
+            key={id}
+            href={`#${id}`}
+            aria-label={id}
+            className={`flex h-10 flex-1 items-center justify-center rounded-full transition-colors ${
+              active === id
+                ? 'bg-[var(--color-accent)] text-white shadow-[0_0_16px_var(--color-accent)]'
+                : 'text-[var(--color-muted)] hover:bg-[var(--color-bg-soft)]'
+            }`}
+          >
+            <Icon size={18} />
+          </a>
+        ))}
+      </nav>
+    </>
   )
 }
