@@ -14,7 +14,18 @@ export function ProjectCard({ project }: { project: Project }) {
   const lang = i18n.language.startsWith('en') ? 'en' : 'es'
 
   return (
-    <article className="flex flex-col rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 transition-shadow hover:shadow-lg">
+    <article className="flex flex-col overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] transition-shadow hover:shadow-lg">
+      {project.image && (
+        <div className="aspect-[4/3] w-full overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-bg-soft)]">
+          <img
+            src={project.image}
+            alt={project.title}
+            loading="lazy"
+            className="h-full w-full object-cover object-top"
+          />
+        </div>
+      )}
+      <div className="flex flex-1 flex-col p-6">
       <div className="flex items-start justify-between gap-3">
         <h3 className="text-lg font-semibold text-[var(--color-text-h)]">{project.title}</h3>
         <span
@@ -72,6 +83,7 @@ export function ProjectCard({ project }: { project: Project }) {
             <Lock size={13} /> {t('projects.no_public_link')}
           </span>
         )}
+      </div>
       </div>
     </article>
   )

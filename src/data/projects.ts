@@ -7,6 +7,7 @@ export interface Project {
   stack: string[]
   demoUrl?: string
   codeUrl?: string
+  image?: string
   description: { es: string; en: string }
   highlights: { es: string[]; en: string[] }
 }
@@ -42,6 +43,7 @@ export const projects: Project[] = [
     status: 'progress',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'NestJS'],
     demoUrl: 'https://tinyurl.com/224fhe2l',
+    image: '/screenshots/atencion-domiciliaria.png',
     description: {
       es: 'Sistema de gestión para servicios de salud a domicilio: agenda de visitas, pacientes y personal asistencial, con arquitectura por features.',
       en: 'Management system for home healthcare services: visit scheduling, patients, and care staff, built with a feature-based architecture.',
