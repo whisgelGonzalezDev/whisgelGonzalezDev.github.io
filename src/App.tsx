@@ -9,6 +9,7 @@ import { Trajectory } from './components/Trajectory'
 import { Skills } from './components/Skills'
 import { Services } from './components/Services'
 import { Education } from './components/Education'
+import { Languages } from './components/Languages'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
@@ -28,6 +29,7 @@ function App() {
           <Skills />
           <Services />
           <Education />
+          <Languages />
           <Projects />
           <Contact />
         </main>

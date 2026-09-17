@@ -30,6 +30,9 @@
   "education": {
     "title": "Education"
   },
+  "languages": {
+    "title": "Languages"
+  },
   "services": {
     "title": "What I Do",
     "subtitle": "Where I add the most value end to end"
