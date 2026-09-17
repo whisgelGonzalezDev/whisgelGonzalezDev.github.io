@@ -8,6 +8,7 @@
     "contact": "Contacto"
   },
   "hero": {
+    "greeting": "¡Hola! Soy Whisgel González",
     "kicker": "Desarrollador Full-Stack",
     "title": "Construyo productos digitales de punta a punta",
     "subtitle": "9+ años liderando equipos y construyendo plataformas SaaS en producción.",
@@ -25,6 +26,9 @@
   },
   "skills": {
     "title": "Habilidades"
+  },
+  "education": {
+    "title": "Educación"
   },
   "services": {
     "title": "Qué hago",

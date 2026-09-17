@@ -1,12 +1,13 @@
 import { useTranslation } from 'react-i18next'
 import { experience } from '../data/experience'
+import { Section } from './Section'
 
 export function Trajectory() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language.startsWith('en') ? 'en' : 'es'
 
   return (
-    <section id="trajectory" className="mx-auto max-w-3xl px-6 py-20">
+    <Section id="trajectory" maxWidth="max-w-3xl">
       <h2 className="text-sm font-semibold tracking-wide text-[var(--color-accent)] uppercase">
         {t('trajectory.title')}
       </h2>
@@ -52,6 +53,6 @@ export function Trajectory() {
           </li>
         ))}
       </ol>
-    </section>
+    </Section>
   )
 }

@@ -14,14 +14,14 @@ export function ProjectCard({ project }: { project: Project }) {
   const lang = i18n.language.startsWith('en') ? 'en' : 'es'
 
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] transition-shadow hover:shadow-lg">
+    <article className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-soft)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--color-accent)] hover:shadow-[0_0_28px_var(--color-accent-soft)]">
       {project.image && (
         <div className="aspect-[4/3] w-full overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-bg-soft)]">
           <img
             src={project.image}
             alt={project.title}
             loading="lazy"
-            className="h-full w-full object-cover object-top"
+            className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
         </div>
       )}

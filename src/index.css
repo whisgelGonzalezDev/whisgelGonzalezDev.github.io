@@ -55,4 +55,33 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .glow-card {
+    position: relative;
+    border-radius: 1.75rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--color-accent) 8%, transparent),
+      0 20px 60px -20px color-mix(in srgb, var(--color-accent) 30%, transparent);
+  }
+}
+
+.ambient-glow {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ambient-glow span {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.35;
+}
+
+.dark .ambient-glow span {
+  opacity: 0.28;
 }

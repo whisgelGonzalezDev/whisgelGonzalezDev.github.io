@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { LayoutTemplate, Server, UserCog, Rocket, type LucideIcon } from 'lucide-react'
+import { Section } from './Section'
 
 interface Service {
   icon: LucideIcon
@@ -47,7 +48,7 @@ export function Services() {
   const lang = i18n.language.startsWith('en') ? 'en' : 'es'
 
   return (
-    <section id="services" className="mx-auto max-w-5xl px-6 py-20">
+    <Section id="services" maxWidth="max-w-5xl">
       <h2 className="text-sm font-semibold tracking-wide text-[var(--color-accent)] uppercase">
         {t('services.title')}
       </h2>
@@ -57,7 +58,7 @@ export function Services() {
         {SERVICES.map(({ icon: Icon, title, items }) => (
           <div
             key={title.es}
-            className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6"
+            className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--color-accent)] hover:shadow-[0_0_24px_var(--color-accent-soft)]"
           >
             <div className="inline-flex rounded-xl bg-[var(--color-accent-soft)] p-2.5 text-[var(--color-accent)]">
               <Icon size={20} />
@@ -74,6 +75,6 @@ export function Services() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   )
 }

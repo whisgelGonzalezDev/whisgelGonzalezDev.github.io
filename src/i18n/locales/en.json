@@ -8,6 +8,7 @@
     "contact": "Contact"
   },
   "hero": {
+    "greeting": "Hi! I'm Whisgel González",
     "kicker": "Full-Stack Developer",
     "title": "I build digital products end to end",
     "subtitle": "9+ years leading teams and building production SaaS platforms.",
@@ -25,6 +26,9 @@
   },
   "skills": {
     "title": "Skills"
+  },
+  "education": {
+    "title": "Education"
   },
   "services": {
     "title": "What I Do",

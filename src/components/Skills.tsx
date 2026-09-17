@@ -1,12 +1,13 @@
 import { useTranslation } from 'react-i18next'
 import { skillGroups, tools, LEVEL_LABEL, LEVEL_WIDTH } from '../data/skills'
+import { Section } from './Section'
 
 export function Skills() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language.startsWith('en') ? 'en' : 'es'
 
   return (
-    <section id="skills" className="mx-auto max-w-4xl px-6 py-20">
+    <Section id="skills" maxWidth="max-w-4xl">
       <h2 className="text-sm font-semibold tracking-wide text-[var(--color-accent)] uppercase">
         {t('skills.title')}
       </h2>
@@ -24,8 +25,13 @@ export function Skills() {
                   </div>
                   <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-[var(--color-bg-soft)]">
                     <div
-                      className="h-full rounded-full bg-[var(--color-accent)]"
-                      style={{ width: LEVEL_WIDTH[skill.level] }}
+                      className="h-full rounded-full transition-[width] duration-700"
+                      style={{
+                        width: LEVEL_WIDTH[skill.level],
+                        background:
+                          'linear-gradient(90deg, var(--color-accent), var(--color-accent-2))',
+                        boxShadow: '0 0 8px var(--color-accent)',
+                      }}
                     />
                   </div>
                 </div>
@@ -43,13 +49,13 @@ export function Skills() {
           {tools.map((tool) => (
             <span
               key={tool}
-              className="rounded-full bg-[var(--color-bg-soft)] px-3 py-1 text-xs text-[var(--color-muted)]"
+              className="rounded-full bg-[var(--color-bg-soft)] px-3 py-1 text-xs text-[var(--color-muted)] transition-colors hover:bg-[var(--color-accent-soft)] hover:text-[var(--color-accent)]"
             >
               {tool}
             </span>
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
