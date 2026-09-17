@@ -3,6 +3,7 @@
     "about": "About",
     "trajectory": "Trajectory",
     "skills": "Skills",
+    "services": "Services",
     "projects": "Projects",
     "contact": "Contact"
   },
@@ -11,7 +12,8 @@
     "title": "I build digital products end to end",
     "subtitle": "9+ years leading teams and building production SaaS platforms.",
     "cta_projects": "View projects",
-    "cta_contact": "Let's talk"
+    "cta_contact": "Let's talk",
+    "cta_cv": "Download CV"
   },
   "about": {
     "title": "About me",
@@ -23,6 +25,10 @@
   },
   "skills": {
     "title": "Skills"
+  },
+  "services": {
+    "title": "What I Do",
+    "subtitle": "Where I add the most value end to end"
   },
   "projects": {
     "title": "Featured Projects",

@@ -3,6 +3,7 @@
     "about": "Sobre mí",
     "trajectory": "Trayectoria",
     "skills": "Habilidades",
+    "services": "Servicios",
     "projects": "Proyectos",
     "contact": "Contacto"
   },
@@ -11,7 +12,8 @@
     "title": "Construyo productos digitales de punta a punta",
     "subtitle": "9+ años liderando equipos y construyendo plataformas SaaS en producción.",
     "cta_projects": "Ver proyectos",
-    "cta_contact": "Hablemos"
+    "cta_contact": "Hablemos",
+    "cta_cv": "Descargar CV"
   },
   "about": {
     "title": "Sobre mí",
@@ -23,6 +25,10 @@
   },
   "skills": {
     "title": "Habilidades"
+  },
+  "services": {
+    "title": "Qué hago",
+    "subtitle": "Áreas donde aporto más valor de punta a punta"
   },
   "projects": {
     "title": "Proyectos destacados",
