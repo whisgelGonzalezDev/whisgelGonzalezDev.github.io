@@ -41,6 +41,7 @@ export const projects: Project[] = [
     title: 'Atención Domiciliaria',
     status: 'progress',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'NestJS'],
+    demoUrl: 'https://tinyurl.com/224fhe2l',
     description: {
       es: 'Sistema de gestión para servicios de salud a domicilio: agenda de visitas, pacientes y personal asistencial, con arquitectura por features.',
       en: 'Management system for home healthcare services: visit scheduling, patients, and care staff, built with a feature-based architecture.',
@@ -129,6 +130,7 @@ export const projects: Project[] = [
     title: 'Dashboard de Transporte',
     status: 'progress',
     stack: ['NestJS', 'TypeScript', 'PostgreSQL'],
+    demoUrl: 'https://tinyurl.com/28j3ede4',
     description: {
       es: 'Backend para un panel de control de operaciones de transporte: gestión de rutas, unidades y pasajeros.',
       en: 'Backend for a transportation operations dashboard: route, vehicle, and passenger management.',
@@ -136,11 +138,11 @@ export const projects: Project[] = [
     highlights: {
       es: [
         'API modular en NestJS con separación clara por dominio',
-        'Proyecto en desarrollo activo, aún sin repositorio público',
+        'Frontend de administración con gestión de tours y rutas en vivo',
       ],
       en: [
         'Modular NestJS API with clear domain separation',
-        'Actively in development, not yet in a public repository',
+        'Admin frontend with live tour and route management',
       ],
     },
   },
